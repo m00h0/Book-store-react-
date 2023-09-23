@@ -8,6 +8,7 @@ const Book = () => (
         <p className="book-type">action</p>
         <h2 className="book-title">the hunter game</h2>
         <p className="book-author">Suzanne Collins</p>
+        <p className="book-author">action</p>
         <ul className="book-actions">
           <li className="book-action">
             <button type="button" className="comment-btn">
