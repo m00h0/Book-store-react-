@@ -1,9 +1,9 @@
 .book-item {
     padding: 1.438rem 6.188rem 1.688rem 6.25rem;
     margin-bottom: 1rem;
-  }
-  
-  .book-main {
+}
+
+.book-main {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     justify-content: center;
@@ -12,113 +12,113 @@
     border-radius: 5px;
     border: 1px solid #e8e8e8;
     padding: 2rem 1rem 2rem 3rem;
-  }
-  
-  .comment-btn,
-  .remove-btn,
-  .edit-btn {
+}
+
+.comment-btn,
+.remove-btn,
+.edit-btn {
     background-color: transparent;
     border: none;
     color: #4386bf;
     font-size: 1.6rem;
-  }
-  
-  .book-type {
+}
+
+.book-type {
     color: #9d9d9d;
     font-size: 2rem;
     font-weight: 600;
     text-transform: capitalize;
-    margin: 0 0 0.5rem;
-  }
-  
-  .book-title {
+    margin-bottom: 0.5rem;
+}
+
+.book-title {
     color: #121212;
     font-size: 2.6rem;
     font-weight: bold;
     text-transform: capitalize;
     margin: 0;
-  }
-  
-  .book-author {
+}
+
+.book-author {
     color: #4386bf;
     font-weight: 300;
-    margin: 0 0 2.4rem;
-  }
-  
-  .book-actions {
+    margin-bottom: 2.4rem;
+}
+
+.book-actions {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 0;
-  }
-  
-  .book-action {
+}
+
+.book-action {
     display: flex;
     align-items: center;
-  }
-  
-  .book-action:nth-child(1) {
-    padding: 0 0.8rem 0 0;
-  }
-  
-  .book-action:nth-child(2),
-  .book-action:nth-child(3) {
+}
+
+.book-action:nth-child(1) {
+    padding-right: 0.8rem;
+}
+
+.book-action:nth-child(2),
+.book-action:nth-child(3) {
     padding: 0 0.8rem;
-  }
-  
-  .book-action:nth-child(1),
-  .book-action:nth-child(2) {
+}
+
+.book-action:nth-child(1),
+.book-action:nth-child(2) {
     border-right: 1px solid #333;
-  }
-  
-  .book-action a {
+}
+
+.book-action a {
     text-decoration: none;
     color: #4386bf;
     font-weight: 300;
-  }
-  
-  .book-completion {
+}
+
+.book-completion {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
-  
-  .pourcentage-number {
+}
+
+.pourcentage-number {
     font-family: Montserrat, sans-serif;
     font-size: 4rem;
     margin: 0;
     color: #121212;
-  }
-  
-  .pourcentage-text {
+}
+
+.pourcentage-text {
     color: #909090;
     margin: 0;
-  }
-  
-  .line {
+}
+
+.line {
     margin-left: 5rem;
     width: 1px;
     height: 7rem;
     background-color: #e8e8e8;
-  }
-  
-  .book-update {
+}
+
+.book-update {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .current-chapter {
+}
+
+.current-chapter {
     color: #a7a7a7;
     margin: 0;
-  }
-  
-  .current-lesson {
+}
+
+.current-lesson {
     color: #121212;
     margin: 0.8rem 0 2.3rem;
-  }
-  
+}
+
 .updatebutton {
     color: #fff;
     padding: 1.2rem 1.6rem;
@@ -130,4 +130,5 @@
     text-transform: uppercase;
     text-align: center;
     border: none;
-  }
+}
+
