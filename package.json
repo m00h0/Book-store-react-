@@ -1,5 +1,5 @@
 {
-  "name": "bookstore",
+  "name": "my-bookstore",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,9 +38,9 @@
     ]
   },
   "devDependencies": {
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
+    "@babel/eslint-parser": "^7.22.15",
+    "eslint": "^8.50.0",
     "eslint-config-airbnb": "^19.0.4",
-    "stylelint": "^15.10.3",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-csstree-validator": "^3.0.0",
     "stylelint-scss": "^5.2.1"
