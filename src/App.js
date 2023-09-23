@@ -1,22 +1,20 @@
-import { Route, Routes } from 'react-router-dom';
-import Books from './components/books/Books';
-import Categories from './components/categories/Categories';
-import Header from './components/Header/Header';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import Books from './components/Books';
+import Categories from './components/Categories';
+import NavBar from './components/NavBar';
+import NoPage from './components/NoPage';
+import './index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <div className="main">
-        <div className="container">
-          <Header />
-          <Routes>
-            <Route path="/" element={<Books />} />
-            <Route path="/categories" element={<Categories />} />
-          </Routes>
-        </div>
-      </div>
-    </div>
-  );
-}
+const App = () => (
+  <HashRouter>
+    <Routes>
+      <Route path="/" element={<NavBar />}>
+        <Route index element={<Books />} />
+        <Route path="categories" element={<Categories />} />
+        <Route path="*" element={<NoPage />} />
+      </Route>
+    </Routes>
+  </HashRouter>
+);
 
 export default App;
