@@ -1,6 +1,6 @@
 {
   "extends": ["stylelint-config-standard"],
-  "plugins": ["stylelint-scss", "stylelint-csstree-validator","./node_modules/stylelint-scss"],
+  "plugins": ["stylelint-scss", "stylelint-csstree-validator"],
   "rules": {
     "at-rule-no-unknown": [
       true,
