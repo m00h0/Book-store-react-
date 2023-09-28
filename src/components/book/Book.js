@@ -2,12 +2,13 @@ import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 import './book.css';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook } from '../../redux/features/books/booksSlice';
+import { deleteBook } from '../../redux/features/books/booksSlice';
 
-const Book = ({ book }) => {
-  const {
-    itemId, title, author, category,
-  } = book;
+const Book = ({ ItemId, book }) => {
+  const { title, author, category } = book;
+
+  const id = ItemId;
+
   const dispatch = useDispatch();
   return (
     <div className="book-item">
@@ -26,7 +27,7 @@ const Book = ({ book }) => {
               <button
                 type="button"
                 className="remove-btn"
-                onClick={() => dispatch(removeBook(itemId))}
+                onClick={() => dispatch(deleteBook(id))}
               >
                 Remove
               </button>
@@ -62,17 +63,19 @@ const Book = ({ book }) => {
 
 Book.propTypes = {
   book: PropTypes.shape({
-    itemId: PropTypes.string,
+    item_id: PropTypes.string,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
   }),
+  ItemId: PropTypes.string,
 };
 
 Book.defaultProps = {
   book: {
-    itemId: '', title: '', author: '', category: '',
+    item_id: '', title: '', author: '', category: '',
   },
+  ItemId: '',
 };
 
 export default Book;
