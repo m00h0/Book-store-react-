@@ -9,12 +9,23 @@
 }
 
 .form-book-title {
-  width: 55%;
+  width: 35%;
   border: 1px solid #e8e8e8;
   padding: 1.2rem 2.4rem;
   font-size: 1.6rem;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-book-author {
+  width: 15%;
+  border: 1px solid #e8e8e8;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
   border-radius: 5px;
   outline: none;
 }
@@ -25,9 +36,16 @@
   padding: 1.2rem 2.4rem;
   font-size: 1.6rem;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border-radius: 5px;
   outline: none;
+}
+
+.form-book-title::placeholder,
+.form-book-author::placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #888;
 }
 
 .form-btn {
@@ -36,8 +54,9 @@
   border-radius: 5px;
   color: #fff;
   padding: 1.2rem 2.3rem;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   border: none;
+  cursor: pointer;
 }
 
 .form-title {

@@ -5,13 +5,22 @@ import { addBook } from '../../redux/features/books/booksSlice';
 
 const BookForm = () => {
   const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
   const dispatch = useDispatch();
+
   const formSubmit = (e) => {
     e.preventDefault();
     const book = {
+      itemId: crypto.randomUUID(),
       title,
+      author,
+      category,
     };
     dispatch(addBook(book));
+    setTitle('');
+    setAuthor('');
+    setCategory('');
   };
   return (
     <div className="book-form-main">
@@ -24,7 +33,14 @@ const BookForm = () => {
           onChange={(e) => setTitle(e.target.value)}
           value={title}
         />
-        <select className="book-categories">
+        <input
+          className="form-book-author"
+          placeholder="author"
+          required
+          onChange={(e) => setAuthor(e.target.value)}
+          value={author}
+        />
+        <select onChange={(e) => setCategory(e.target.value)} className="book-categories">
           <option>Category</option>
           <option>Action</option>
           <option>Economy</option>
