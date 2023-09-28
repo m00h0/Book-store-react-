@@ -24,6 +24,7 @@ const BookForm = () => {
   };
   return (
     <div className="book-form-main">
+      <hr className="hr" />
       <p className="form-title">ADD NEW BOOK</p>
       <form className="book-form" onSubmit={formSubmit}>
         <input
