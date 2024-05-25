@@ -75,7 +75,7 @@ In order to run this project you need: Run Linters
 
 Clone this repository to your desired folder:
 
-https://github.com/newtonah0/Book-store-react-.git
+https://github.com/m00h0/Book-store-react-.git
 
 ### Install
 
